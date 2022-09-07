@@ -1,3 +1,34 @@
-div {
-  background-color: aqua;
+.calculator-container {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 12.5%;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+
+th {
+  padding-right: 0.25em;
+  text-align: right;
+  background-color: gray;
+  color: whitesmoke;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-size: xxx-large;
+}
+
+td {
+  height: 3em;
+  width: 25%;
+  text-align: center;
+  background-color: darkgray;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.right-column {
+  background-color: orange;
 }
