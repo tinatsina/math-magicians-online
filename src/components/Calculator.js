@@ -1,24 +1,34 @@
 import React from 'react';
 import '../styles/Calculator.css';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
     this.onClickHandler = this.onClickHandler.bind(this);
+    this.state = {};
   }
 
   onClickHandler = (e) => {
-    console.log(e.target.innerHTML);
+    const result = calculate(this.state, e.target.innerHTML);
+    this.setState(result);
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
+      // Destructuring the state
       <div className="calculator-container">
         <table>
           <thead>
             <tr>
-              <th colSpan="4">0</th>
+              {/* Display the output */}
+              <th colSpan="4">
+                {total}
+                {operation}
+                {next}
+              </th>
             </tr>
           </thead>
           <tbody>
