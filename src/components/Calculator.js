@@ -1,50 +1,65 @@
 import React from 'react';
 import '../styles/Calculator.css';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
+    this.onClickHandler = this.onClickHandler.bind(this);
+    this.state = {};
+  }
+
+  onClickHandler = (e) => {
+    const result = calculate(this.state, e.target.innerHTML);
+    this.setState(result);
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
+      // Destructuring the state
       <div className="calculator-container">
         <table>
           <thead>
             <tr>
-              <th colSpan="4">0</th>
+              {/* Display the output */}
+              <th colSpan="4">
+                {total}
+                {operation}
+                {next}
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>AC</td>
-              <td>+/-</td>
-              <td>%</td>
-              <td className="right-column">÷</td>
+              <td><button type="button" onClick={this.onClickHandler}>AC</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>+/-</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>%</button></td>
+              <td><button type="button" onClick={this.onClickHandler} className="right-column">÷</button></td>
             </tr>
             <tr>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td className="right-column">x</td>
+              <td><button type="button" onClick={this.onClickHandler}>7</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>8</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>9</button></td>
+              <td><button type="button" onClick={this.onClickHandler} className="right-column">x</button></td>
             </tr>
             <tr>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td className="right-column">-</td>
+              <td><button type="button" onClick={this.onClickHandler}>4</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>5</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>6</button></td>
+              <td><button type="button" onClick={this.onClickHandler} className="right-column">-</button></td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td className="right-column">+</td>
+              <td><button type="button" onClick={this.onClickHandler}>1</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>2</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>4</button></td>
+              <td><button type="button" onClick={this.onClickHandler} className="right-column">+</button></td>
             </tr>
             <tr>
-              <td colSpan="2">0</td>
-              <td>.</td>
-              <td className="right-column">=</td>
+              <td colSpan="2"><button type="button" onClick={this.onClickHandler}>0</button></td>
+              <td><button type="button" onClick={this.onClickHandler}>.</button></td>
+              <td><button type="button" onClick={this.onClickHandler} className="right-column">=</button></td>
             </tr>
           </tbody>
         </table>
