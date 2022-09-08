@@ -5,6 +5,11 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
+    this.onClickHandler = this.onClickHandler.bind(this);
+  }
+
+  onClickHandler = (e) => {
+    console.log(e.target.innerHTML);
   }
 
   render() {
@@ -18,33 +23,33 @@ class Calculator extends React.Component {
           </thead>
           <tbody>
             <tr>
-              <td>AC</td>
-              <td>+/-</td>
-              <td>%</td>
-              <td className="right-column">÷</td>
+              <td><button type="button">AC</button></td>
+              <td><button type="button">+/-</button></td>
+              <td><button type="button">%</button></td>
+              <td><button type="button" className="right-column">÷</button></td>
             </tr>
             <tr>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td className="right-column">x</td>
+              <td><button type="button">7</button></td>
+              <td><button type="button">8/-</button></td>
+              <td><button type="button">9</button></td>
+              <td><button type="button" className="right-column">x</button></td>
             </tr>
             <tr>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td className="right-column">-</td>
+              <td><button type="button">4</button></td>
+              <td><button type="button">5</button></td>
+              <td><button type="button">6</button></td>
+              <td><button type="button" className="right-column">-</button></td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td className="right-column">+</td>
+              <td><button type="button">1</button></td>
+              <td><button type="button">2</button></td>
+              <td><button type="button">4</button></td>
+              <td><button type="button" className="right-column">+</button></td>
             </tr>
             <tr>
-              <td colSpan="2">0</td>
-              <td>.</td>
-              <td className="right-column">=</td>
+              <td colSpan="2"><button type="button">0</button></td>
+              <td><button type="button">.</button></td>
+              <td><button type="button" className="right-column">=</button></td>
             </tr>
           </tbody>
         </table>
