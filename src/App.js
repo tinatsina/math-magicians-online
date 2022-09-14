@@ -1,5 +1,5 @@
 import React from 'react';
-import Calculator from './components/Calculator';
+import NavigationBar from './components/NavigationBar';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,7 +9,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <Calculator />
+      <>
+        <NavigationBar />
+      </>
     );
   }
 }

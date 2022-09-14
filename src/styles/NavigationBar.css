@@ -1,0 +1,12 @@
+.navbar-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navbar-list > li {
+  width: 15%;
+  display: inline-block;
+  list-style: none;
+  font-size: x-large;
+  text-align: center;
+}
