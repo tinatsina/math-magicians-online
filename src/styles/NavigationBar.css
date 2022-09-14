@@ -1,3 +1,14 @@
+nav {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url('../img/00000.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar-list {
   display: flex;
   flex-direction: row-reverse;
@@ -9,9 +20,17 @@
   list-style: none;
   font-size: x-large;
   text-align: center;
+  font-family: cursive;
+}
+
+.navbar-list > li > a {
+  color: antiquewhite;
 }
 
 .navbar-logo {
   float: left;
   margin: 0;
+  color: antiquewhite;
+  font-size: x-large;
+  font-family: cursive;
 }

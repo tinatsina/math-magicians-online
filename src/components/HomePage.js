@@ -1,7 +1,8 @@
 import React from 'react';
+import '../styles/HomePage.css';
 
 const HomePage = () => (
-  <div>
+  <div className="home-page-component">
     <h2>
       Welcome to our page
     </h2>
@@ -12,9 +13,6 @@ const HomePage = () => (
       Vitae ultricies leo integer malesuada nunc vel risus.
       Viverra adipiscing at in tellus integer feugiat scelerisque.
       Nibh cras pulvinar mattis nunc sed blandit libero.
-      At augue eget arcu dictum varius duis at consectetur.
-      Augue mauris augue neque gravida in fermentum et sollicitudin.
-      Sit amet consectetur adipiscing elit. Diam sollicitudin tempor id eu nisl nunc.
     </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -23,9 +21,6 @@ const HomePage = () => (
       Vitae ultricies leo integer malesuada nunc vel risus.
       Viverra adipiscing at in tellus integer feugiat scelerisque.
       Nibh cras pulvinar mattis nunc sed blandit libero.
-      At augue eget arcu dictum varius duis at consectetur.
-      Augue mauris augue neque gravida in fermentum et sollicitudin.
-      Sit amet consectetur adipiscing elit. Diam sollicitudin tempor id eu nisl nunc.
     </p>
   </div>
 );
