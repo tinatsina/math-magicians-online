@@ -7,6 +7,7 @@ import MathQuote from './MathQuote';
 
 const NavigationBar = () => (
   <nav>
+    <h1 className="navbar-logo">MATH MAIGICIANS</h1>
     <ul className="navbar-list">
       <li><Link to="/">Home</Link></li>
       <li><Link to="Calculator">Calculator</Link></li>

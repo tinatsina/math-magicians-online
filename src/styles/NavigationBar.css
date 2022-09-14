@@ -4,9 +4,14 @@
 }
 
 .navbar-list > li {
-  width: 15%;
+  width: 25%;
   display: inline-block;
   list-style: none;
   font-size: x-large;
   text-align: center;
+}
+
+.navbar-logo {
+  float: left;
+  margin: 0;
 }
