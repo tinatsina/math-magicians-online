@@ -12,6 +12,9 @@ const Calculator = () => {
   return (
     // Destructuring the state
     <div className="calculator-container">
+      <h2>
+        Let us do some math
+      </h2>
       <table>
         <thead>
           <tr>
@@ -49,9 +52,9 @@ const Calculator = () => {
             <td><button type="button" onClick={onClickHandler} className="right-column">+</button></td>
           </tr>
           <tr>
-            <td colSpan="2"><button type="button" onClick={onClickHandler}>0</button></td>
+            <td colSpan="2"><button className="zero-button" type="button" onClick={onClickHandler}>0</button></td>
             <td><button type="button" onClick={onClickHandler}>.</button></td>
-            <td><button type="button" onClick={onClickHandler} className="right-column">=</button></td>
+            <td><button type="button" onClick={onClickHandler} className="right-column equal-button">=</button></td>
           </tr>
         </tbody>
       </table>
