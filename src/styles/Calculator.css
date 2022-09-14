@@ -1,12 +1,16 @@
 .calculator-container {
-  width: 50%;
+  display: flex;
   height: 50%;
   margin: auto;
   margin-top: 12.5%;
 }
 
+.calculator-container > h2 {
+  width: 40%;
+}
+
 table {
-  width: 100%;
+  width: 60%;
   height: 100%;
 }
 

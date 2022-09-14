@@ -12,6 +12,9 @@ const Calculator = () => {
   return (
     // Destructuring the state
     <div className="calculator-container">
+      <h2>
+        Let us do some math
+      </h2>
       <table>
         <thead>
           <tr>

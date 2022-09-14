@@ -9,9 +9,9 @@ const NavigationBar = () => (
   <nav>
     <h1 className="navbar-logo">MATH MAIGICIANS</h1>
     <ul className="navbar-list">
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="Calculator">Calculator</Link></li>
       <li><Link to="MathQuote">MathQuote</Link></li>
+      <li><Link to="Calculator">Calculator</Link></li>
+      <li><Link to="/">Home</Link></li>
     </ul>
     <Routes>
       <Route path="/" element={<HomePage />} />
