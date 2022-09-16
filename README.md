@@ -13,6 +13,14 @@
 - WebPack
 - React
 
+## Live Deployment
+
+> The website is built using React and deployed using Netlify
+
+![The image](src/img/00001.jpg)
+
+[Math Magicians Link](https://mathematical-maigicians-online.netlify.app/)
+
 ## Getting Started
 
 **Set up a linter for HTML, CSS and JS**
